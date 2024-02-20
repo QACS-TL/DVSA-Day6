@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <title>The Number Input Type</title>
+  <script type="text/javascript" src="./js/validate.js" ></script>
+ </head>
+ <body>
+  <form method="post" action="scripts/subscribe.pl" name="myForm" onsubmit="return validateNumberForm()">
+    <p>
+    Please enter an odd number:
+    <br />
+    <input title="User NUmber" type="number" min="1" max="12" step="2" value="6" name="UsrNumber" required/>
+    <br />
+    <br />
+    <input type="submit" name="OKButton" value="OK"/>
+   </p>
+  </form>
+ </body>
+</html> 

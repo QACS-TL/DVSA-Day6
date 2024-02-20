@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <style>
+            body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        </style>
+    </head>
+    <body>
+        <h1>Event Handling Example</h1>
+        <button id="myButton">Click me</button>
+        <button id="myOtherButton" onclick="handleButtonClick()">Click me too</button>
+        <script>
+            function handleButtonClick() {
+                alert("Button clicked! Event handled by JavaScript.");
+            }
+            var myButton = document.getElementById("myButton");
+            myButton.onclick = handleButtonClick;
+        </script>
+    </body>
+</html>

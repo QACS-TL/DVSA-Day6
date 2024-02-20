@@ -1,0 +1,19 @@
+<html>
+ <head>
+  <script type="text/javascript">
+    function validateForm() {
+        let x = document.forms["myForm"]["UsrName"].value;
+        if (x.trim() == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+  </script>
+ </head>
+ <body>
+  <form method="post" action="scripts/subscribe.pl" name="myForm" onsubmit="return validateForm()">
+    <input type="text" name="UsrName" value=""/> 
+    <input type="submit" name="OKButton" value="Vend"/> 
+  </form>
+ </body>
+</html>

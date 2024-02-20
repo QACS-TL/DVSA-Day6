@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <title>Styling Lists</title>
+  <style type="text/css">
+    @font-face {
+        font-family: Amatic;
+        src: url(AmaticSC-Bold.ttf);
+    }
+    body{
+        font: 24px 'Amatic', cursive;
+    }
+    table{
+        border-spacing: 0;
+        border-collapse: separate; /* setting this to collapse negates border-spacing settings */
+     }
+    .borderstyle{
+        border: 1px solid blue;
+        vertical-align: top; /* can set this to top, bottom or middle */
+    }
+    .captionside{
+        caption-side: top; /* can set this to top or bottom  */ 
+        empty-cells: show; /* can set this to show or hide (needs border-spacing gt 0 to see effect) */
+    }
+    tr:nth-child(odd) { background-color: palegreen; }
+    tr:nth-child(even) { background-color: rgb(160, 204, 229); }
+    table.fixed-layout-fixed-width {
+      table-layout: auto;
+      width: 1500px;  
+    }
+  </style>
+ </head>
+
+ <body>
+    <h1>Wonkymotion's famous alumni actors include:</h1>
+    <div style="overflow-x : auto">
+        <table  id="alumni" class="captionside fixed-layout-fixed-width" >
+        <caption><h2>Postman Pat and the Heist</h2></caption>
+          <tr>
+            <th class="borderstyle">Image</th>
+            <th class="borderstyle">Name</th>
+            <th class="borderstyle">Character Bio</th>
+          </tr>
+          <tr>
+            <td class="borderstyle"><img src="./Pat.png" alt="Postman Pat" width="100"/></td>
+            <td class="borderstyle">Postman Pat</td>
+            <td class="borderstyle">Pat is going through hard times what with the price of cat food and all the other bills he has to pay. Consequently he decides to take the bull by the horns and start out on a new life of crime....</td>
+          </tr>
+          <tr>
+            <td class="borderstyle"><img src="./Goggins.png" alt="Mrs Goggins" width="100"/></td>
+            <td class="borderstyle">Mrs Goggins</td>
+            <td class="borderstyle">Mrs Goggins loves a nice sun tan but has she overdone it this time...?</td>
+          </tr>
+          <tr>
+            <td class="borderstyle"><img src="./Ted.png" alt="Ted Glen" width="100"/></td>
+            <td class="borderstyle">Ted Glen</td>
+            <td class="borderstyle">Ted was going about a normal day when he stumbes into a desperate Pat.</td>
+          </tr>
+          <tr>
+            <td class="borderstyle"><img src="./Jess.png" alt="Jess" width="100"/></td>
+            <td class="borderstyle">Jess</td>
+            <td class="borderstyle"></td>
+          </tr>
+          <tr>
+            <td class="borderstyle"><img src="./ConstableSelby.png" alt="Constable Selby" width="100"/></td>
+            <td class="borderstyle">Constable Selby</td>
+            <td class="borderstyle">Constable Selby is a man who like to do things by the book. He collects stamps, pictures of trains and bus numbers. He is also rather officious. However, when the call comes in from Mrs Goggins he jumps into action, ready to save the day.</td>
+          </tr>
+        </table>
+    </div>
+ </body>
+</html>
